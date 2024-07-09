@@ -1,4 +1,5 @@
 import 'package:doctor_apoinement/screens/auth_page.dart';
+import 'package:doctor_apoinement/screens/booking_page.dart';
 import 'package:doctor_apoinement/screens/doctor_details.dart';
 import 'package:doctor_apoinement/utils/config.dart';
 import 'package:doctor_apoinement/utils/main_layout.dart';
@@ -45,8 +46,9 @@ static final navigatorKey = GlobalKey<NavigatorState>();
       ,
       routes: {
         '/' : (((context) => const AuthPage() )),
-        'main' :(context) => MainLayout(),
-        'doc_details' : (context) => DoctorDetails()
+        'main' :(context) => const MainLayout(),
+        'doc_details' : (context) => const DoctorDetails(),
+        'booking_page' : (context) => const BookingPage()
       },
     );
   }
